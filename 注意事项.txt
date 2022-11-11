@@ -1,0 +1,11 @@
+所有接口在返回时使用R中的两个方法R.success()  R.error()
+爆红时注意R的导包是否错误，baomidou包下也有一个已经弃用的R类。
+
+实现controller中接口流程：
+1 在涉及到的对象的service层接口中声明新的接口 
+2 并将主要业务流程写在对应的Impl类中
+3 在controller中只调用Impl中写好的方法。
+4 在需要当前登录用户的ID信息时，从BaseContext中获取。
+
+
+6666666666
